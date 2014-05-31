@@ -19,7 +19,7 @@
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
-
+	<link href="/fonts/genericons/genericons.css" rel="stylesheet" type="text/css">
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
 
 <!--[if lt IE 9]>

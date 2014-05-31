@@ -63,48 +63,12 @@ img {
 ================================================================================================= */
 /* Transition Times
 ================================================================================================= */
-@font-face {
-  font-family: 'Novecentowide-Bold';
-  src: url("/fonts/novecento/25DFFC_0_0.eot");
-  src: url("/fonts/novecento/25DFFC_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_0_0.woff") format("woff"), url("/fonts/novecento/25DFFC_0_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Light';
-  src: url("/fonts/novecento/25DFFC_1_0.eot");
-  src: url("/fonts/novecento/25DFFC_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_1_0.woff") format("woff"), url("/fonts/novecento/25DFFC_1_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-DemiBold';
-  src: url("/fonts/novecento/25DFFC_2_0.eot");
-  src: url("/fonts/novecento/25DFFC_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_2_0.woff") format("woff"), url("/fonts/novecento/25DFFC_2_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Book';
-  src: url("/fonts/novecento/25DFFC_3_0.eot");
-  src: url("/fonts/novecento/25DFFC_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_3_0.woff") format("woff"), url("/fonts/novecento/25DFFC_3_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Normal';
-  src: url("/fonts/novecento/25DFFC_4_0.eot");
-  src: url("/fonts/novecento/25DFFC_4_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_4_0.woff") format("woff"), url("/fonts/novecento/25DFFC_4_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Medium';
-  src: url("/fonts/novecento/25DFFC_5_0.eot");
-  src: url("/fonts/novecento/25DFFC_5_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_5_0.woff") format("woff"), url("/fonts/novecento/25DFFC_5_0.ttf") format("truetype");
-}
-
 /* Links and Headers
 ======================================================= */
 a {
   color: blue;
-  -webkit-transition: all 666ms ease-in-out;
-  transition: all 666ms ease-in-out;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -118,8 +82,9 @@ h1, h2, h3, h4, h5 {
   color: #444444;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  font-style: normal;
 }
 
 h1 {
@@ -165,8 +130,6 @@ footer {
   font-size: 0.85em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
 }
 
 /* Extras
@@ -206,10 +169,3 @@ footer {
   background: #444444;
   color: white;
 }
-
-/* RESPONSIVE
-============================================================================================== */
-/* Retina-specific stuff here */
-/* Other Sizes */
-/* iPads (landscape) ----------- */
-/* iPads (portrait) ----------- */
