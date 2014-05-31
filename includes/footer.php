@@ -1,7 +1,7 @@
 <!-- Footer Content -->
-<!-- <footer>
-  <p class="copyright">Copyright Year // Company Name</p>
-</footer> -->
+<footer>
+ <p>Copyright Year // Company Name</p>
+</footer>
 
 <!-- Go To Top Btn -->
 <!-- <a href="#" class="go-top ss-icon scroll">▲</a>  -->

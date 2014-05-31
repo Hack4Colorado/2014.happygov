@@ -120,18 +120,6 @@ body {
 ======================================================= */
 /* Footer
 ======================================================= */
-footer {
-  width: 100%;
-  padding: 15px 0;
-  background: #333;
-  background: #393939;
-  color: #ccc;
-  text-align: center;
-  font-size: 0.85em;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
 /* Extras
 ======================================================= */
 .go-top {
