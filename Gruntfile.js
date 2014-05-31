@@ -71,6 +71,7 @@ module.exports = function(grunt) {
                 files: ['js/main.js'],
                 tasks: ['concat', 'uglify'],
                 options: {
+                    livereload: true,
                     spawn: false,
                 },
             },

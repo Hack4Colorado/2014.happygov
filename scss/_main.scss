@@ -13,14 +13,14 @@ a {
 h1, h2, h3, h4, h5 {
 	margin-bottom:0.35em;
 	color:$headline-color;
-	letter-spacing:0.25em;
+	letter-spacing:0.15em;
 	text-transform:uppercase;
 	@include font-os(700);
 }
 
 h1 {font-size:4.5em;}
 h2 {font-size:3.25em;}
-h3 {font-size:2.25em;}
+h3 {font-size:1.5em;}
 h4 {font-size:2.1em;}
 h5 {font-size:1em;}
 
@@ -34,6 +34,7 @@ h5 {font-size:1em;}
 body {
 	font-size:62.5%;
 	color:$body-copy-color;
+	@include font-os(400);
 }
 
 
@@ -57,10 +58,6 @@ header {}
 
 
 
-
-/* Footer
-======================================================= */
-footer {}
 
 
 
@@ -88,6 +85,24 @@ footer {}
 .last {margin-right:0 !important;}
 
 
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 
 
 

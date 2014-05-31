@@ -9,21 +9,21 @@
 <div id="featured">
 	<!-- Open Issues -->
 	<div>
-		<h3>Widget Title</h3>
-		<div>9999</div>
+		<h3>Open Issues</h3>
+		<div class="big-number">9999</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
 	<!-- Overdue Issues -->
 	<div>
-		<h3>Widget Title</h3>
-		<div>9</div>
+		<h3>Overdue Issues</h3>
+		<div class="big-number">9</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
 	<!-- Popular Issues -->
 	<div>
-		<h3>Widget Title</h3>
+		<h3>Popular Issues</h3>
 		<ol>
 			<li>Issue Name? <span>1200 Votes</span></li>
 			<li>Issue Name? <span>1200 Votes</span></li>

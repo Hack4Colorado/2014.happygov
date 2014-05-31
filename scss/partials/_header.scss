@@ -1,0 +1,8 @@
+header {
+	//padding:1em;
+	@extend .cf;
+	img, nav {display:inline-block;}
+	nav {
+		float:right;
+	}
+}

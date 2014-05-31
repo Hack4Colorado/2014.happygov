@@ -1,0 +1,14 @@
+// Toggle Bar
+#toggle {
+	@extend .cf;
+	a {
+		width:50%;
+		float:left;
+		padding:1em 0;
+		background: grey;
+		text-align:center;
+		&.active {
+			background: red;
+		}
+	}
+}

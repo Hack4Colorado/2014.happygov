@@ -61,6 +61,8 @@ img {
 
 /* Colors
 ================================================================================================= */
+/* Grid
+================================================================================================= */
 /* Transition Times
 ================================================================================================= */
 /* Links and Headers
@@ -80,7 +82,7 @@ a:hover {
 h1, h2, h3, h4, h5 {
   margin-bottom: 0.35em;
   color: #444444;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -96,7 +98,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.25em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -112,13 +114,14 @@ h5 {
 body {
   font-size: 62.5%;
   color: #444444;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Header/Logo and Tagline
 ======================================================= */
 /* Content
-======================================================= */
-/* Footer
 ======================================================= */
 /* Extras
 ======================================================= */
@@ -142,6 +145,29 @@ body {
   margin-right: 0 !important;
 }
 
+.cf:before, #toggle:before, header:before, #featured:before,
+.cf:after,
+#toggle:after,
+header:after,
+#featured:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after, #toggle:after, header:after, #featured:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf, #toggle, header, #featured {
+  *zoom: 1;
+}
+
 /* Selection Colors
 ======================================================= */
 ::-moz-selection {
@@ -156,4 +182,73 @@ body {
 ::-moz-selection {
   background: #444444;
   color: white;
+}
+
+.button {
+  background: blue;
+  padding: 0.8em 1em 1em;
+  display: inline-block;
+}
+
+#toggle a {
+  width: 50%;
+  float: left;
+  padding: 1em 0;
+  background: grey;
+  text-align: center;
+}
+#toggle a.active {
+  background: red;
+}
+
+header img, header nav {
+  display: inline-block;
+}
+header nav {
+  float: right;
+}
+
+/* Featured Module
+======================================================= */
+#featured > div {
+  width: 27.33333%;
+  padding: 3%;
+  float: left;
+  vertical-align: top;
+  height: 150px;
+  position: relative;
+}
+#featured > div:first-child, #featured > div:nth-child(2) {
+  -webkit-box-shadow: inset -1px 0px 0 0 black;
+  box-shadow: inset -1px 0px 0 0 black;
+}
+#featured > div h3 {
+  margin-bottom: 1em;
+}
+#featured > div .big-number {
+  text-align: center;
+  width: 100%;
+  font-size: 8em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#featured > div a {
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+  text-decoration: none;
+}
+#featured > div a span {
+  font-size: 8px;
+  width: 8px;
+  height: 8px;
+  position: relative;
+  top: 1px;
+}
+
+/* Footer
+======================================================= */
+footer {
+  background: purple;
 }
