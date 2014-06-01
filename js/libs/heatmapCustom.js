@@ -102,7 +102,7 @@ function init() {
 								//console.log(g);
 
 								//alert(votes);
-								g.attributes.Votes = votes + 1;
+								g.attributes.Votes = Number(votes) + 1;
 								//alert(g.attributes.Votes);
 								//console.log(g);
 								jQuery('.voteCount').text(g.attributes.Votes);
