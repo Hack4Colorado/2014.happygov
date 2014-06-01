@@ -1,6 +1,6 @@
 <!-- Footer Content -->
 <footer>
- <p><a href=""><span class="genericon genericon-github"></span> View on Github</a> // License? // HappyGov 2014 // Hack4Colorado</p>
+ <p><a href="https://github.com/Placeholders-H4CO/2014.happygov" target="_blank"><span class="genericon genericon-github"></span> View on Github</a>  //  Made at <a href="http://hack4colorado.com">Hack4Colorado</a></p>
 </footer>
 
 <!-- Go To Top Btn -->
