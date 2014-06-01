@@ -20,6 +20,7 @@
 		z-index: -1;
 		//filter:blur(20px);
 	}
+	@include responsive($tabletB) {padding:6% 8%;}
 	h2 {
 		color:$dark-blue;
 		//text-shadow: 2px 2px 0 rgba(255,255,255,0.75);
@@ -31,10 +32,15 @@
 		text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
 		margin-bottom:0.7em;
 		@include font-os(400, italic);
+		@include responsive($tabletB) {font-size:1.5em;}
 	}
 	.button {
 		background:$red;
 		margin-top:1em;
 		&:hover {background:darken($red, 10%);}
+		@include responsive($tabletB) {
+			text-align: center;
+			line-height: 1.2;
+		}
 	}
 }

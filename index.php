@@ -34,7 +34,7 @@
 
 	<!-- Popular Issues -->
 	<div>
-		<h3>Popular Requests</h3>
+		<h3>Most Requested</h3>
 		<ol>
 			<li>Grafitti on Private Property <span class="genericon genericon-digg">1038 Votes</span></li>
 			<li>Pothole Needs Repair <span class="genericon genericon-digg">874 Votes</span></li>

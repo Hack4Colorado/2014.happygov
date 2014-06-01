@@ -16,9 +16,9 @@
 		position: relative;
 		&:first-child, &:nth-child(2) {
 			box-shadow: inset -1px 0px 0 0 $grey;
-			@include responsive($tabletP) {box-shadow:inset 0 -1px 0 0 $grey;}
+			@include responsive($tabletB) {box-shadow:inset 0 -1px 0 0 $grey;}
 		}
-		@include responsive($tabletP){
+		@include responsive($tabletB){
 			width:100% - ($spacer * 2);
 		}
 

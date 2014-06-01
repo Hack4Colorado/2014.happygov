@@ -153,7 +153,7 @@ p {
   margin-right: 0 !important;
 }
 
-.cf:before, .wrapper:before, #admin:before, #toggle:before, header:before, #featured:before, #mc_embed_signup form .clear:before, body#user #profile:before,
+.cf:before, .wrapper:before, #admin:before, #toggle:before, header:before, #featured:before, #mc_embed_signup form .clear:before, body#user #profile:before, body#user #issues ul li:before,
 .cf:after,
 .wrapper:after,
 #admin:after,
@@ -161,14 +161,15 @@ p {
 header:after,
 #featured:after,
 #mc_embed_signup form .clear:after,
-body#user #profile:after {
+body#user #profile:after,
+body#user #issues ul li:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.cf:after, .wrapper:after, #admin:after, #toggle:after, header:after, #featured:after, #mc_embed_signup form .clear:after, body#user #profile:after {
+.cf:after, .wrapper:after, #admin:after, #toggle:after, header:after, #featured:after, #mc_embed_signup form .clear:after, body#user #profile:after, body#user #issues ul li:after {
   clear: both;
 }
 
@@ -176,7 +177,7 @@ body#user #profile:after {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf, .wrapper, #admin, #toggle, header, #featured, #mc_embed_signup form .clear, body#user #profile {
+.cf, .wrapper, #admin, #toggle, header, #featured, #mc_embed_signup form .clear, body#user #profile, body#user #issues ul li {
   *zoom: 1;
 }
 
@@ -208,6 +209,11 @@ body#user #profile:after {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+@media all and (max-width: 700px) {
+  #admin p span:not(.genericon) {
+    display: none;
+  }
 }
 #admin p span.genericon-cog {
   float: right;
@@ -287,11 +293,16 @@ header {
   padding: 1.5em 2em;
   background: white;
 }
+@media all and (max-width: 700px) {
+  header {
+    text-align: center;
+  }
+}
 header img, header nav {
   display: inline-block;
 }
 header img {
-  width: 270px;
+  width: 280px;
 }
 header nav {
   float: right;
@@ -299,6 +310,13 @@ header nav {
   width: 50%;
   position: relative;
   top: 1.5em;
+}
+@media all and (max-width: 700px) {
+  header nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 header nav a {
   margin-left: 3%;
@@ -309,6 +327,11 @@ header nav a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+@media all and (max-width: 700px) {
+  header nav a.button, header nav #main a.btn, #main header nav a.btn {
+    margin-top: 20px;
+  }
 }
 
 #intro {
@@ -333,6 +356,11 @@ header nav a {
   background-attachment: fixed;
   z-index: -1;
 }
+@media all and (max-width: 700px) {
+  #intro {
+    padding: 6% 8%;
+  }
+}
 #intro h2 {
   color: #287297;
 }
@@ -345,12 +373,23 @@ header nav a {
   font-weight: 400;
   font-style: italic;
 }
+@media all and (max-width: 700px) {
+  #intro .byline {
+    font-size: 1.5em;
+  }
+}
 #intro .button, #intro #main .btn, #main #intro .btn, #intro #mc_embed_signup form input[type="submit"], #mc_embed_signup form #intro input[type="submit"] {
   background: #e74c3c;
   margin-top: 1em;
 }
 #intro .button:hover, #intro #main .btn:hover, #main #intro .btn:hover, #intro #mc_embed_signup form input[type="submit"]:hover, #mc_embed_signup form #intro input[type="submit"]:hover {
   background: #d62c1a;
+}
+@media all and (max-width: 700px) {
+  #intro .button, #intro #main .btn, #main #intro .btn, #intro #mc_embed_signup form input[type="submit"], #mc_embed_signup form #intro input[type="submit"] {
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 /* Featured Module
@@ -376,13 +415,13 @@ header nav a {
   -webkit-box-shadow: inset -1px 0px 0 0 #cbcbcb;
   box-shadow: inset -1px 0px 0 0 #cbcbcb;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   #featured > div:first-child, #featured > div:nth-child(2) {
     -webkit-box-shadow: inset 0 -1px 0 0 #cbcbcb;
     box-shadow: inset 0 -1px 0 0 #cbcbcb;
   }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   #featured > div {
     width: 97%;
   }
@@ -483,8 +522,7 @@ header nav a {
   position: absolute;
   right: 1.5%;
   top: 1.5%;
-  width: 20%;
-  max-width: 180px;
+  width: 180px;
   padding: 2em;
   background: white;
   background: rgba(255, 255, 255, 0.9);
@@ -628,6 +666,12 @@ header nav a {
   margin: 0 auto;
   font-size: 1.3em;
 }
+@media all and (max-width: 700px) {
+  #mc_embed_signup form {
+    width: 82%;
+    padding: 3% 6% 1.5%;
+  }
+}
 #mc_embed_signup form h4 {
   font-size: 1.75em;
 }
@@ -691,11 +735,21 @@ body#user .wrapper {
   width: 70%;
   margin: 40px auto;
 }
+@media all and (max-width: 700px) {
+  body#user .wrapper {
+    width: 90%;
+  }
+}
 body#user #profile {
   padding: 2em 0;
   width: 15%;
   margin: 0;
   display: inline-block;
+}
+@media all and (max-width: 700px) {
+  body#user #profile {
+    width: 100%;
+  }
 }
 body#user #profile a {
   text-decoration: none;
@@ -711,6 +765,12 @@ body#user #profile img {
   background: #cbcbcb;
   border: 10px solid #f6f6f6;
 }
+@media all and (max-width: 700px) {
+  body#user #profile img {
+    width: 30%;
+    margin-right: 1.5%;
+  }
+}
 body#user #profile div {
   display: inline-block;
 }
@@ -723,6 +783,11 @@ body#user #issues {
   padding: 2em 0;
   display: inline-block;
   float: right;
+}
+@media all and (max-width: 700px) {
+  body#user #issues {
+    width: 100%;
+  }
 }
 body#user #issues ul:last-child {
   margin-top: 20px;
@@ -745,8 +810,22 @@ body#user #issues ul li span:not(.genericon) {
   float: right;
   margin-right: 1.5%;
 }
+@media all and (max-width: 700px) {
+  body#user #issues ul li span:not(.genericon) {
+    float: left;
+    margin-top: 7px;
+    width: 100%;
+  }
+}
 body#user #issues ul li span.genericon {
   position: relative;
   top: 3px;
   left: 9px;
+}
+@media all and (max-width: 700px) {
+  body#user #issues ul li span.genericon {
+    float: right;
+    top: -7px;
+    left: 4px;
+  }
 }

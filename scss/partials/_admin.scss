@@ -9,7 +9,9 @@
 		margin-bottom: 0;
 		@include font-os(600);
 		span {
-			&:not(.genericon) {}
+			&:not(.genericon) {
+				@include responsive($tabletB) {display:none;}
+			}
 			&.genericon-cog {float:right;}
 			a {
 				margin-left:$spacer;

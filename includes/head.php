@@ -32,15 +32,16 @@
       document.createElement('footer');
    </script>
 <![endif]-->
-	<script>
-		var dojoConfig = {
-			parseOnLoad:true,
-			packages: [{
-				"name": "myModules",
-				"location": location.pathname.replace(/\/[^/]+$/, "") + "/myModules"
-			}]
-		};
-	</script>
+<script>
+var dojoConfig = {
+parseOnLoad:true,
+packages: [{
+"name": "myModules",
+"location": "http://happygov.com/myModules"
+}]
+};
+</script>
+
 	<script type="text/javascript" src="http://js.arcgis.com/3.9/"></script>
 </head>
 

@@ -20,6 +20,10 @@
 		top:30vh;
 		margin:0 auto;
 		font-size: 1.3em;
+		@include responsive($tabletB){
+			width:82%;
+			padding:($spacer * 2) 6% $spacer;
+		}
 		h4 {font-size:1.75em;}
 		label {
 			display: block;

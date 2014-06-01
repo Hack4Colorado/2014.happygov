@@ -6,6 +6,7 @@ body#user {
 	.wrapper {
 		width:70%;
 		margin: 40px auto;
+		@include responsive($tabletB){width:90%;}
 	}
 	#profile {
 		padding:2em 0;
@@ -13,6 +14,7 @@ body#user {
 		margin:0;// 0 0 ($spacer * 3);
 		display: inline-block;
 		@extend .cf;
+		@include responsive($tabletB) {width:100%;}
 		a {
 			text-decoration:none;
 			span {
@@ -28,6 +30,7 @@ body#user {
 			//height:150px;
 			background:$grey;
 			border:10px solid $extra-light-grey;
+			@include responsive($tabletB) {width:30%; margin-right:$spacer;}
 		}
 		div {
 			display: inline-block;
@@ -44,6 +47,7 @@ body#user {
 		padding:2em 0;
 		display: inline-block;
 		float:right;
+		@include responsive($tabletB) {width:100%;}
 		ul {
 			&:last-child {margin-top:20px;}
 			li {
@@ -53,15 +57,29 @@ body#user {
 				padding: 1em;
 				margin-top:-1px;
 				font-size: 1.3em;
+				@extend .cf;
 				&:nth-child(2n) {background:white;}
 				span {
-					&:not(.genericon) {float:right; margin-right:$spacer;}
+					&:not(.genericon) {
+						float:right;
+						margin-right:$spacer;
+						@include responsive($tabletB){
+							float: left;
+							margin-top: 7px;
+							width: 100%;
+						}
+					}
 					font-size: 0.9em;
 					&.genericon {
 						//margin-left:$spacer;
 						position: relative;
 						top: 3px;
 						left:9px;
+						@include responsive($tabletB){
+							float: right;
+							top:-7px;
+							left:4px;
+						}
 					}
 				}
 			}
