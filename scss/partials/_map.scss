@@ -1,7 +1,7 @@
 // Map
 #main {
 	display:none;
-	//position:relative;
+	position:relative;
 	//width:100%;
 	//padding:0;
 	//margin:auto;
@@ -18,16 +18,33 @@
 	}
 	#configArea {
 		position:absolute;
-		right:10px;
+		right:$spacer;
+		top:$spacer;
 		width:20%;
 		max-width:180px;
-		padding:15px;
-		padding-top:0;
-		padding-right:0;
+		padding:2em;
+		background:white;
+		background:rgba(255,255,255,0.9);
+		border:1px solid $light-grey;
+		h4 {
+			font-size:1.4em;
+			color:$body-copy-color;
+			span {
+				$size:20px;
+				font-size: $size;
+				width: $size - 1px;
+				height: $size;
+				position: relative;
+				top: -3px;
+			}
+		}
 	}
 	.btn {
 		margin-top:10px;
 		cursor:pointer;
+		width:86%;
+		text-align: center;
+		text-transform: uppercase;
 		@extend .button;
 	}
 	#map {
@@ -44,21 +61,30 @@
 	}
 	.esriPopupWrapper {
 		border-radius:0;
+		box-shadow:none;
+		.pointer, .outerPointer {display:none;}
+		#map_graphics_layer {
+			path {fill:$darkgreen;}
+		}
 		.sizer {
 			.titlePane {
 				background:$blue;
 				border-radius:0;
 				padding:0.5em;
+				text-transform: uppercase;
 				@include font-os(600);
 				.titleButton {
+					margin-right:5px;
 					&.maximize {top:10px;}
 					&.close {top:7px;}
 				}
 			}
 			&.content {
+				color:$body-copy-color;
 				.contentPane {line-height:1.5em;}
 				b {
 					font-size: 1.25em;
+					color:$headline-color;
 				}
 				p {
 					color:$body-copy-color;
@@ -79,7 +105,11 @@
 		}
 		.actionsPane {
 			border-radius:0;
-			.actionList {margin-bottom:10px;}
+			.actionList {
+				margin-bottom:10px;
+				color:$red;
+				@include font-os(600);
+			}
 		}
 	}
 }

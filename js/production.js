@@ -1131,6 +1131,14 @@ $('#listToggle').click(function(){
   $('#list').addClass('active');
 });
 
+$('#tog').click(function(){
+  $('#tog2').removeClass('active');
+  $(this).addClass('active');
+});
+$('#tog2').click(function(){
+  $('#tog').removeClass('active');
+  $(this).addClass('active');
+});
 
 
 

@@ -201,13 +201,19 @@ header:after,
   text-decoration: none;
 }
 .button span, #main .btn span {
-  font-size: 13px;
-  width: 13px;
-  height: 13px;
+  font-size: 20px;
+  width: 18px;
+  height: 11px;
+  display: none;
+  position: relative;
+  top: -4px;
 }
-.button:hover, #main .btn:hover {
+.button:hover, #main .btn:hover, .button.active, #main .active.btn {
   background: #e74c3c;
   color: white;
+}
+.button.active span, #main .active.btn span {
+  display: inline-block;
 }
 
 #toggle a {
@@ -285,7 +291,7 @@ header nav a {
 }
 #intro .byline {
   font-size: 2.4em;
-  line-height: 1.2;
+  line-height: 1.15;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -398,6 +404,7 @@ header nav a {
 
 #main {
   display: none;
+  position: relative;
 }
 #main.active {
   display: block;
@@ -413,16 +420,32 @@ header nav a {
 }
 #main #configArea {
   position: absolute;
-  right: 10px;
+  right: 1.5%;
+  top: 1.5%;
   width: 20%;
   max-width: 180px;
-  padding: 15px;
-  padding-top: 0;
-  padding-right: 0;
+  padding: 2em;
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e5e5e5;
+}
+#main #configArea h4 {
+  font-size: 1.4em;
+  color: #9d9d9d;
+}
+#main #configArea h4 span {
+  font-size: 20px;
+  width: 19px;
+  height: 20px;
+  position: relative;
+  top: -3px;
 }
 #main .btn {
   margin-top: 10px;
   cursor: pointer;
+  width: 86%;
+  text-align: center;
+  text-transform: uppercase;
 }
 #main #map {
   width: 100%;
@@ -438,14 +461,26 @@ header nav a {
 }
 #main .esriPopupWrapper {
   border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#main .esriPopupWrapper .pointer, #main .esriPopupWrapper .outerPointer {
+  display: none;
+}
+#main .esriPopupWrapper #map_graphics_layer path {
+  fill: #1da052;
 }
 #main .esriPopupWrapper .sizer .titlePane {
   background: #409dcc;
   border-radius: 0;
   padding: 0.5em;
+  text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+#main .esriPopupWrapper .sizer .titlePane .titleButton {
+  margin-right: 5px;
 }
 #main .esriPopupWrapper .sizer .titlePane .titleButton.maximize {
   top: 10px;
@@ -453,11 +488,15 @@ header nav a {
 #main .esriPopupWrapper .sizer .titlePane .titleButton.close {
   top: 7px;
 }
+#main .esriPopupWrapper .sizer.content {
+  color: #9d9d9d;
+}
 #main .esriPopupWrapper .sizer.content .contentPane {
   line-height: 1.5em;
 }
 #main .esriPopupWrapper .sizer.content b {
   font-size: 1.25em;
+  color: #409dcc;
 }
 #main .esriPopupWrapper .sizer.content p {
   color: #9d9d9d;
@@ -481,6 +520,10 @@ header nav a {
 }
 #main .esriPopupWrapper .actionsPane .actionList {
   margin-bottom: 10px;
+  color: #e74c3c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 #list {
