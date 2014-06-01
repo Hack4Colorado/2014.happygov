@@ -9,7 +9,6 @@ function resizeDiv() {
   // Elements
   mapOffset = $('#main').offset().top;
   footerH = $('footer').height();
-
   // Map
   //$('#ninjaWrap').css({'height': vph - footerH + 'px'});
   $('#main').css({'height': vph / 1.6 + 'px'});
