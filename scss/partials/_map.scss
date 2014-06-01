@@ -1,0 +1,9 @@
+// Map
+#map {
+	display:none;
+	&.active {display:block;}
+	iframe { // Dev
+		width:100%;
+		pointer-events: none;
+	}
+}

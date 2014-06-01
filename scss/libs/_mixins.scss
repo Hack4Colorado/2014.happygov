@@ -31,3 +31,7 @@
 	-ms-transition: all $time ease-in-out;
 	transition: all $time ease-in-out;
 }
+
+@mixin responsive($size) {
+  @media all and (max-width: $size) {@content;}
+}

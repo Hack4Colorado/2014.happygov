@@ -1,6 +1,6 @@
 <!-- Footer Content -->
 <footer>
- <p>Copyright Year // Company Name</p>
+ <p>License? // HappyGov 2014 // Hack4Colorado</p>
 </footer>
 
 <!-- Go To Top Btn -->

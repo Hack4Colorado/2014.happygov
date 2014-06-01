@@ -4,31 +4,49 @@
 	@extend .cf;
 	> div {
 		width:(100% / 3) - ($spacer * 2);
-		padding:$spacer;
+		padding:0 $spacer;
 		float:left;
 		vertical-align: top;
-		height:150px;
+		height:170px;
 		position: relative;
-		&:first-child, &:nth-child(2) {box-shadow: inset -1px 0px 0 0 black;}
+		&:first-child, &:nth-child(2) {
+			box-shadow: inset -1px 0px 0 0 $grey;
+			@include responsive($tabletP) {box-shadow:inset 0 -1px 0 0 $grey;}
+		}
+		@include responsive($tabletP){
+			width:100% - ($spacer * 2);
+		}
 
 		// Widget Elements //
-		h3 {margin-bottom:1em;}
+		h3 {margin:1em 0;}
 		// Big Number
 		.big-number {
+			margin-bottom: 4em;
+			display: block;
 			text-align: center;
 			width:100%;
 			font-size: 8em;
-			@include font-os(900);
+			color:$lightgreen;
+			@include font-os(700);
+			&.high {color:$red;}
+			&.medium {color:$orange;}
+			&.low {}
 		}
 		// List
-		ul {
-			li {}
+		ol {
+			margin-left:$spacer * 4;
+			li {
+				margin-bottom: 1em;
+				span {float:right;}
+			}
 		}
 		// Learn More links
 		a {
 			position:absolute;
-			bottom:$spacer * 2;
-			right:$spacer * 2;
+			bottom:$spacer * 4;
+			right:0;
+			left:0;
+			text-align:center;
 			text-decoration: none;
 			span {
 				$size: 8px;

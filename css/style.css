@@ -63,6 +63,8 @@ img {
 ================================================================================================= */
 /* Grid
 ================================================================================================= */
+/* Responsive
+================================================================================================= */
 /* Transition Times
 ================================================================================================= */
 /* Links and Headers
@@ -82,7 +84,7 @@ a:hover {
 h1, h2, h3, h4, h5 {
   margin-bottom: 0.35em;
   color: #444444;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -186,57 +188,116 @@ header:after,
 
 .button {
   background: blue;
-  padding: 0.8em 1em 1em;
+  border-radius: 4px;
+  padding: 0.8em;
   display: inline-block;
+  color: white;
 }
 
 #toggle a {
   width: 50%;
   float: left;
   padding: 1em 0;
-  background: grey;
+  background: #e5e5e5;
   text-align: center;
+  color: #cbcbcb;
 }
 #toggle a.active {
-  background: red;
+  background: blue;
+  color: white;
 }
 
+header {
+  padding: 1em;
+  background: #cbcbcb;
+}
 header img, header nav {
   display: inline-block;
 }
 header nav {
   float: right;
+  text-align: right;
+  width: 50%;
+}
+header nav a {
+  margin-left: 3%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+header nav a:not(.button) {
+  text-shadow: 2px 2px 0 #b2b2b2;
+}
+
+#intro {
+  background: #e5e5e5;
+  padding: 1.5%;
 }
 
 /* Featured Module
 ======================================================= */
 #featured > div {
-  width: 27.33333%;
-  padding: 3%;
+  width: 30.33333%;
+  padding: 0 1.5%;
   float: left;
   vertical-align: top;
-  height: 150px;
+  height: 170px;
   position: relative;
 }
 #featured > div:first-child, #featured > div:nth-child(2) {
-  -webkit-box-shadow: inset -1px 0px 0 0 black;
-  box-shadow: inset -1px 0px 0 0 black;
+  -webkit-box-shadow: inset -1px 0px 0 0 #cbcbcb;
+  box-shadow: inset -1px 0px 0 0 #cbcbcb;
+}
+@media all and (max-width: 600px) {
+  #featured > div:first-child, #featured > div:nth-child(2) {
+    -webkit-box-shadow: inset 0 -1px 0 0 #cbcbcb;
+    box-shadow: inset 0 -1px 0 0 #cbcbcb;
+  }
+}
+@media all and (max-width: 600px) {
+  #featured > div {
+    width: 97%;
+  }
 }
 #featured > div h3 {
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 #featured > div .big-number {
+  margin-bottom: 4em;
+  display: block;
   text-align: center;
   width: 100%;
   font-size: 8em;
+  color: #2ecc71;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
+}
+#featured > div .big-number.high {
+  color: #e74c3c;
+}
+#featured > div .big-number.medium {
+  color: #f39c12;
+}
+#featured > div ol {
+  margin-left: 6%;
+}
+#featured > div ol li {
+  margin-bottom: 1em;
+}
+#featured > div ol li span {
+  float: right;
 }
 #featured > div a {
   position: absolute;
   bottom: 6%;
-  right: 6%;
+  right: 0;
+  left: 0;
+  text-align: center;
   text-decoration: none;
 }
 #featured > div a span {
@@ -247,8 +308,22 @@ header nav {
   top: 1px;
 }
 
+#map {
+  display: none;
+}
+#map.active {
+  display: block;
+}
+#map iframe {
+  width: 100%;
+  pointer-events: none;
+}
+
 /* Footer
 ======================================================= */
 footer {
-  background: purple;
+  background: #cbcbcb;
+  padding: 1.5%;
+  color: white;
+  text-align: center;
 }
