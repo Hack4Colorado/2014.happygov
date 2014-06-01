@@ -79,7 +79,7 @@
 
 <!-- Begin List -->
 	<div id="list">
-		<div class="chart">LISTS!!!!! CHARTS!!!! EYEBALL CANDIES!!!!</div>
+		<?php include('includes/list.php'); ?>
 	</div>
 	<!-- End List -->
 </div>
