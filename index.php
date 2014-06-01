@@ -10,7 +10,7 @@
 <!-- Begin Intro -->
 	<div id="intro">
 		<!--<h2>Citizen Satisfaction</h2>-->
-		<p class="byline">Discover thousands of 311 service requests logged across the city of Denver and rate the issues that matter most to you.</p>
+		<p class="byline">Discover 311 service requests logged across your city and rate the issues that matter most to you.</p>
 		<p>HappyGov is a citizen evangelist platform brought to life at Hack 4 Colorado. HappyGov has continued to develop into a fully-functional and customizable service request ecosystem.</p>
 		<a id="signup-toggle" class="button">Sign up for Notifications near you!</a>
 	</div>

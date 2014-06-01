@@ -47,6 +47,6 @@
 <body id="<?php echo $id; ?>">
 
 <div id="admin">
-	<p><span class="genericon genericon-user"></span> Welcome Back Ann Spoor<span><a>View Your Requests</a><a>Neighborhood Stats</a></span><span class="genericon genericon-cog"></span></p>
+	<p><span class="genericon genericon-user"></span> Welcome Back Amber Young<span><a>View Your Requests</a><a>Neighborhood Stats</a></span><span class="genericon genericon-cog"></span></p>
 </div>
 

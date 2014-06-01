@@ -40,9 +40,9 @@
 <div class="wrapper">
 <!-- Begin Profile -->
 <div id="profile">
-	<img src="/images/profilepic.png"/>
+	<img src="/images/profilepic.jpg"/>
 	<div>
-		<h3>Ann Spoor</h3>
+		<h3>Amber Young</h3>
 		<p class="location">Denver, CO - Capitol Hill</p>
 		<a href=""><span class="genericon genericon-edit"></span> New Request</a>
 	</div>
