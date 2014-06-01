@@ -10,7 +10,7 @@ function resizeDiv() {
   mapOffset = $('#main').offset().top;
   footerH = $('footer').height;
 
-  // Map
+  // Map 
   $('#main').css({'height': vph + 'px'});
   $('#main iframe').css({'height': vph + 'px'});
 }

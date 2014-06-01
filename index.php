@@ -52,7 +52,26 @@
 <!-- End View Toggle -->
 
 <!-- Begin Map -->
-	<div id="main" class="active"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d196349.3432420176!2d-104.9327023923828!3d39.740583318570806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1401578563430" frameborder="0" style="border:0"></iframe></div>
+	<div id="main" class="active">
+		<div id="heatmapArea">
+			<div id="heatLayer"></div>
+		 <!--<div id="title">Denver 311</div>-->
+			<div id="map">
+				<div id="LocateButton"></div>
+			</div>
+		</div>
+		<div id="configArea">
+			
+			<div id="tog" class="btn">TOGGLE HEATMAP</div>
+			<div id="tog2" class="btn">TOGGLE CASES</div>
+			<!--<div id="typeBox" style="background:#fff;padding:5px;margin-top:20px;border:1px solid #333;">
+			<h3>Toggle By Type</h3>
+			<input type="checkbox" id="complaintbox">Complaints</input><br/>
+			<input type="checkbox" id="servicebox">Service Requests</input><br/>
+			<input type="checkbox" id="complimentbox">Compliments</input><br/>
+			</div>-->
+		</div>
+	</div>
 <!-- End Map -->
 
 <!-- Begin List -->
