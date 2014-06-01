@@ -33,5 +33,5 @@
 
 </head>
 
-<body id="home">
+<body>
 

@@ -4,7 +4,8 @@
 $grey:#cbcbcb;
 $light-grey:lighten($grey, 10%);
 $dark-grey:darken($grey, 10%);
-$extra-light-grey:lighten($light-grey, 6%);
+$extra-light-grey:lighten($light-grey, 7%);
+$extra-dark-grey:darken($dark-grey, 8%);
 
 $blue:#409DCC;
 $dark-blue:darken($blue, 15%);
@@ -22,8 +23,8 @@ $darkgreen:#1da052;
 $lightgreen:#2ecc71;
 
 
-$headline-color:darken($dark-grey, 20%);
-$body-copy-color:$dark-grey;
+$headline-color:$blue;//darken($dark-grey, 20%);
+$body-copy-color:$extra-dark-grey;
 
 $link-color:$dark-grey;
 $link-hover-color:$red;

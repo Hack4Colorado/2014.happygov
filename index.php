@@ -46,7 +46,7 @@
 <!-- Begin View Toggle -->
 	<div id="toggle">
 		<a id="mapToggle" class="active">Map</a>
-		<a id="listToggle">List</a>
+		<a id="listToggle">Data</a>
 	</div>
 <!-- End View Toggle -->
 

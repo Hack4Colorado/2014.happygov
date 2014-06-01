@@ -5,7 +5,12 @@
 	padding:0.9em 1.2em;
 	display:inline-block;
 	color:white;
-	//text-shadow:2px 2px 0 $dark-blue;
+	span {
+		$size:13px;
+		font-size:$size;
+		width:$size;
+		height:$size;
+	}
 	&:hover {
 		background:$red;
 		color:white;

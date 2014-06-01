@@ -7,7 +7,7 @@
 		padding:0 $spacer;
 		float:left;
 		vertical-align: top;
-		height:170px;
+		height:180px;
 		position: relative;
 		&:first-child, &:nth-child(2) {
 			box-shadow: inset -1px 0px 0 0 $grey;
@@ -18,7 +18,7 @@
 		}
 
 		// Widget Elements //
-		h3 {margin:1em 0;}
+		h3 {margin:1.2em 0 1em;}
 		// Big Number
 		.big-number {
 			margin-bottom: 4em;
@@ -60,18 +60,20 @@
 		// Learn More links
 		a {
 			position:absolute;
-			bottom:$spacer * 4;
+			bottom:$spacer * 5;
 			right:0;
 			left:0;
 			text-align:center;
 			text-decoration: none;
+			font-size:1.2em;
 			span {
-				$size: 8px;
+				$size: 10px;
 				font-size:$size;
 				width:$size;
 				height:$size;
 				position: relative;
 				top: 1px;
+				margin-left:3px;
 			}
 		}
 	}

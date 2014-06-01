@@ -1,12 +1,15 @@
 header {
-	padding:1em 2em;
+	padding:1.2em 2em;
 	background:$grey;
 	@extend .cf;
 	img, nav {display:inline-block;}
+	img {width:230px;}
 	nav {
 		float:right;
 		text-align: right;
 		width:50%;
+		position:relative;
+		top:1em;
 		a {
 			margin-left:$spacer * 2;
 			text-decoration: none;
