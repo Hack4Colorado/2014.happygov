@@ -18,4 +18,10 @@
 			text-shadow:2px 2px 0 $dark-blue;
 		}
 	}
+	&.sticky {
+		position: fixed;
+		left:0;
+		right:0;
+		top:180px;
+	}
 }

@@ -45,6 +45,7 @@ function init() {
 		// create map
 		map = new esri.Map("map", {
 				extent: initExtent,
+				//smartNavigaion: false,
 				sliderStyle: "small"
 		});
 
@@ -92,7 +93,7 @@ function init() {
 							var content = "<b>"+summary+"</b> <br> Status: "+status+" <br> Opened: <p>";
 						}
 
-						content = content + "<br><br><span class='genericon genericon-digg' onclick='javascript:voteOnIncident();'></span> "+votes+"</p>";
+						content = content + "<br><br><span class='genericon genericon-digg' onclick='javascript:voteOnIncident();'></span> <span class='voteCount'>"+votes+"</span></p>";
 
 
 
@@ -100,11 +101,11 @@ function init() {
 						voteOnIncident = function() {
 								//console.log(g);
 
-								alert(votes);
+								//alert(votes);
 								g.attributes.Votes = votes + 1;
-								alert(g.attributes.Votes);
+								//alert(g.attributes.Votes);
 								//console.log(g);
-
+								jQuery('.voteCount').text(g.attributes.Votes);
 								//this makes the HTTP request to apply the edits to the service
 								featureLayer.applyEdits(null,[g],null);
 							};
@@ -146,6 +147,7 @@ function init() {
 		map.addLayer(basemap);
 		// once map is loaded
 		dojo.connect(map, 'onLoad', function (theMap) {
+				//map.disablePan();
 				//resize the map when the browser resizes
 				dojo.connect(dijit.byId('map'), 'resize', map, map.resize);
 				// create heat layer

@@ -153,18 +153,22 @@ p {
   margin-right: 0 !important;
 }
 
-.cf:before, #toggle:before, header:before, #featured:before,
+.cf:before, .wrapper:before, #admin:before, #toggle:before, header:before, #featured:before, #mc_embed_signup form .clear:before, body#user #profile:before,
 .cf:after,
+.wrapper:after,
+#admin:after,
 #toggle:after,
 header:after,
-#featured:after {
+#featured:after,
+#mc_embed_signup form .clear:after,
+body#user #profile:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.cf:after, #toggle:after, header:after, #featured:after {
+.cf:after, .wrapper:after, #admin:after, #toggle:after, header:after, #featured:after, #mc_embed_signup form .clear:after, body#user #profile:after {
   clear: both;
 }
 
@@ -172,7 +176,7 @@ header:after,
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf, #toggle, header, #featured {
+.cf, .wrapper, #admin, #toggle, header, #featured, #mc_embed_signup form .clear, body#user #profile {
   *zoom: 1;
 }
 
@@ -192,15 +196,52 @@ header:after,
   color: white;
 }
 
-.button, #main .btn {
+#admin {
+  background: #e74c3c;
+  padding: 0.75em 1em;
+  color: white;
+  -webkit-box-shadow: inset 0 -2px 2px 0 #bf2718;
+  box-shadow: inset 0 -2px 2px 0 #bf2718;
+}
+#admin p {
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+#admin p span.genericon-cog {
+  float: right;
+}
+#admin p span a {
+  margin-left: 1.5%;
+  display: inline-block;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#admin p span a:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: underline;
+}
+body#home #admin {
+  display: none;
+}
+
+.button, #main .btn, #mc_embed_signup form input[type="submit"] {
   background: #409dcc;
   border-radius: 4px;
   padding: 0.9em 1.2em;
   display: inline-block;
   color: white;
   text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
-.button span, #main .btn span {
+.button span, #main .btn span, #mc_embed_signup form input[type="submit"] span {
   font-size: 20px;
   width: 18px;
   height: 11px;
@@ -208,11 +249,11 @@ header:after,
   position: relative;
   top: -4px;
 }
-.button:hover, #main .btn:hover, .button.active, #main .active.btn {
+.button:hover, #main .btn:hover, #mc_embed_signup form input[type="submit"]:hover, .button.active, #main .active.btn, #mc_embed_signup form input.active[type="submit"] {
   background: #e74c3c;
   color: white;
 }
-.button.active span, #main .active.btn span {
+.button.active span, #main .active.btn span, #mc_embed_signup form input.active[type="submit"] span {
   display: inline-block;
 }
 
@@ -234,6 +275,12 @@ header:after,
   background: #409dcc;
   color: white;
   text-shadow: 2px 2px 0 #287297;
+}
+#toggle.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 180px;
 }
 
 header {
@@ -297,16 +344,25 @@ header nav a {
   font-weight: 400;
   font-style: italic;
 }
-#intro .button, #intro #main .btn, #main #intro .btn {
+#intro .button, #intro #main .btn, #main #intro .btn, #intro #mc_embed_signup form input[type="submit"], #mc_embed_signup form #intro input[type="submit"] {
   background: #e74c3c;
   margin-top: 1em;
 }
-#intro .button:hover, #intro #main .btn:hover, #main #intro .btn:hover {
+#intro .button:hover, #intro #main .btn:hover, #main #intro .btn:hover, #intro #mc_embed_signup form input[type="submit"]:hover, #mc_embed_signup form #intro input[type="submit"]:hover {
   background: #d62c1a;
 }
 
 /* Featured Module
 ======================================================= */
+#featured {
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#featured.sticky {
+  position: fixed;
+}
 #featured > div {
   width: 30.33333%;
   padding: 0 1.5%;
@@ -530,11 +586,79 @@ header nav a {
   font-style: normal;
 }
 
+#ninjaWrap {
+  position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 0;
+  z-index: 9998;
+}
+
 #list {
   display: none;
 }
 #list.active {
   display: block;
+}
+
+#mc_embed_signup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #f6f6f6;
+  background: rgba(20, 20, 20, 0.5);
+}
+#mc_embed_signup.active {
+  display: block;
+}
+#mc_embed_signup form {
+  width: 60%;
+  max-width: 450px;
+  background: white;
+  padding: 3% 1.5% 1.5%;
+  -webkit-box-shadow: 2px 2px 2px 0 #cbcbcb;
+  box-shadow: 2px 2px 2px 0 #cbcbcb;
+  position: relative;
+  top: 30vh;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+#mc_embed_signup form h4 {
+  font-size: 1.75em;
+}
+#mc_embed_signup form label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+#mc_embed_signup form input[type="text"], #mc_embed_signup form input[type="email"] {
+  width: 98%;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #cbcbcb;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+  text-indent: 0.5em;
+  font-size: 1.3em;
+}
+#mc_embed_signup form input[type="submit"] {
+  -webkit-appearance: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  float: right;
+}
+#mc_embed_signup form .genericon {
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 1.5%;
+  color: #e74c3c;
+  font-size: 1em;
 }
 
 /* Footer
@@ -556,4 +680,72 @@ footer a span {
   position: relative;
   top: -1px;
   margin-right: 4px;
+}
+
+body#user #featured {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+body#user .wrapper {
+  width: 70%;
+  margin: 40px auto;
+}
+body#user #profile {
+  padding: 2em 0;
+  width: 15%;
+  margin: 0;
+  display: inline-block;
+}
+body#user #profile a {
+  text-decoration: none;
+}
+body#user #profile a span {
+  position: relative;
+  top: -2px;
+}
+body#user #profile img {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  background: #cbcbcb;
+  border: 10px solid #f6f6f6;
+}
+body#user #profile div {
+  display: inline-block;
+}
+body#user #profile div h3 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+body#user #issues {
+  width: 78%;
+  padding: 2em 0;
+  display: inline-block;
+  float: right;
+}
+body#user #issues ul:last-child {
+  margin-top: 20px;
+}
+body#user #issues ul li {
+  list-style: none;
+  background: #f6f6f6;
+  border: 1px solid #cbcbcb;
+  padding: 1em;
+  margin-top: -1px;
+  font-size: 1.3em;
+}
+body#user #issues ul li:nth-child(2n) {
+  background: white;
+}
+body#user #issues ul li span {
+  font-size: 0.9em;
+}
+body#user #issues ul li span:not(.genericon) {
+  float: right;
+  margin-right: 1.5%;
+}
+body#user #issues ul li span.genericon {
+  position: relative;
+  top: 3px;
+  left: 9px;
 }

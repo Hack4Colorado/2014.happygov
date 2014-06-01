@@ -44,5 +44,9 @@
 	<script type="text/javascript" src="http://js.arcgis.com/3.9/"></script>
 </head>
 
-<body>
+<body id="<?php echo $id; ?>">
+
+<div id="admin">
+	<p><span class="genericon genericon-user"></span> Welcome Back Ann Spoor<span><a>View Your Requests</a><a>Neighborhood Stats</a></span><span class="genericon genericon-cog"></span></p>
+</div>
 

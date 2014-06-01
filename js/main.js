@@ -11,10 +11,12 @@ function resizeDiv() {
   footerH = $('footer').height();
 
   // Map
-  $('#main').css({'height': vph - footerH + 'px'});
-  $('#main #map').css({'height': vph - footerH + 'px'});
+  //$('#ninjaWrap').css({'height': vph - footerH + 'px'});
+  $('#main').css({'height': vph / 1.6 + 'px'});
+  $('#main #map').css({'height': vph / 1.6 + 'px'});
 }
 
+// Main Toggles (map, list)
 $('#mapToggle').click(function(){
   $('#listToggle').removeClass('active');
   $('#list').removeClass('active');
@@ -29,14 +31,48 @@ $('#listToggle').click(function(){
   $('#list').addClass('active');
 });
 
+// Map Toggles
 $('#tog').click(function(){
-  $('#tog2').removeClass('active');
-  $(this).addClass('active');
+  //$('#tog2').toggleClass('active');
+  $(this).toggleClass('active');
 });
 $('#tog2').click(function(){
-  $('#tog').removeClass('active');
-  $(this).addClass('active');
+  //$('#tog').removeClass('active');
+  $(this).toggleClass('active');
 });
 
 
+// Newsletter Form Toggle
+$('#signup-toggle').click(function(){
+  $('#mc_embed_signup').addClass('active');
+});
+$('#form-close').click(function(){
+  $('#mc_embed_signup').removeClass('active');
+});
 
+//$('#main').click(function(){
+//  $(this).removeClass('hide');
+//});
+
+
+// Sticky
+$(document).ready(function() {
+  var stickyNavTop = $('#featured').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop > stickyNavTop) {
+      //$('#featured').addClass('sticky');
+      //$('#toggle').addClass('sticky');
+  } else {
+      //$('#featured').removeClass('sticky');
+      //$('#toggle').removeClass('sticky');
+    }
+  };
+  stickyNav();
+
+  $(window).scroll(function() {
+    stickyNav();
+  });
+});

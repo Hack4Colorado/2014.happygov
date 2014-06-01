@@ -1,3 +1,5 @@
+<?php $id = 'home'; ?>
+
 <?php include('includes/head.php'); ?>
 
 <?php include('includes/nav.php'); ?>
@@ -10,7 +12,7 @@
 		<!--<h2>Citizen Satisfaction</h2>-->
 		<p class="byline">Discover thousands of 311 service requests logged across the city of Denver and rate the issues that matter most to you.</p>
 		<p>HappyGov is a citizen evangelist platform brought to life at Hack 4 Colorado. HappyGov has continued to develop into a fully-functional and customizable service request ecosystem.</p>
-		<a class="button" href="">Sign up for Notifications near you!</a>
+		<a id="signup-toggle" class="button">Sign up for Notifications near you!</a>
 	</div>
 <!-- End Intro -->
 
@@ -52,7 +54,8 @@
 <!-- End View Toggle -->
 
 <!-- Begin Map -->
-	<div id="main" class="active">
+	<!--<div id="ninjaWrap">-->
+	<div id="main" class="active hide">
 		<div id="heatmapArea">
 			<div id="heatLayer"></div>
 			<div id="map">
@@ -71,6 +74,7 @@
 			</div>-->
 		</div>
 	</div>
+	<!--</div>-->
 <!-- End Map -->
 
 <!-- Begin List -->
@@ -80,5 +84,29 @@
 	<!-- End List -->
 </div>
 
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://happygov.us8.list-manage1.com/subscribe/post?u=50863486bf91fb938939df3fd&amp;id=ec5da06bb0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<h4>Stay Updated</h4>
+<p>Sign Up and receive updates for new or overdue service requests in your area.</p>
+<span id="form-close" class="genericon genericon-close-alt"></span>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE2">Zip Code </label>
+	<input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_50863486bf91fb938939df3fd_ec5da06bb0" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<!--End mc_embed_signup-->
 
 <?php include('includes/footer.php'); ?>

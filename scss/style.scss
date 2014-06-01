@@ -8,6 +8,7 @@
 @import "_main";
 
 // Partials
+@import "partials/_admin";
 @import "partials/_buttons";
 @import "partials/_toggles";
 @import "partials/_header";
@@ -15,4 +16,8 @@
 @import "partials/_featured";
 @import "partials/_map";
 @import "partials/_list";
+@import "partials/_forms";
 @import "partials/_footer";
+
+// Page
+@import "partials/_user";

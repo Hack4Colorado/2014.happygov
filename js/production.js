@@ -922,6 +922,7 @@ function init() {
 		// create map
 		map = new esri.Map("map", {
 				extent: initExtent,
+				//smartNavigaion: false,
 				sliderStyle: "small"
 		});
 
@@ -969,7 +970,7 @@ function init() {
 							var content = "<b>"+summary+"</b> <br> Status: "+status+" <br> Opened: <p>";
 						}
 
-						content = content + "<br><br><span class='genericon genericon-digg' onclick='javascript:voteOnIncident();'></span> "+votes+"</p>";
+						content = content + "<br><br><span class='genericon genericon-digg' onclick='javascript:voteOnIncident();'></span> <span class='voteCount'>"+votes+"</span></p>";
 
 
 
@@ -977,11 +978,11 @@ function init() {
 						voteOnIncident = function() {
 								//console.log(g);
 
-								alert(votes);
+								//alert(votes);
 								g.attributes.Votes = votes + 1;
-								alert(g.attributes.Votes);
+								//alert(g.attributes.Votes);
 								//console.log(g);
-
+								jQuery('.voteCount').text(g.attributes.Votes);
 								//this makes the HTTP request to apply the edits to the service
 								featureLayer.applyEdits(null,[g],null);
 							};
@@ -1023,6 +1024,7 @@ function init() {
 		map.addLayer(basemap);
 		// once map is loaded
 		dojo.connect(map, 'onLoad', function (theMap) {
+				//map.disablePan();
 				//resize the map when the browser resizes
 				dojo.connect(dijit.byId('map'), 'resize', map, map.resize);
 				// create heat layer
@@ -1113,10 +1115,12 @@ function resizeDiv() {
   footerH = $('footer').height();
 
   // Map
-  $('#main').css({'height': vph - footerH + 'px'});
-  $('#main #map').css({'height': vph - footerH + 'px'});
+  //$('#ninjaWrap').css({'height': vph - footerH + 'px'});
+  $('#main').css({'height': vph / 1.6 + 'px'});
+  $('#main #map').css({'height': vph / 1.6 + 'px'});
 }
 
+// Main Toggles (map, list)
 $('#mapToggle').click(function(){
   $('#listToggle').removeClass('active');
   $('#list').removeClass('active');
@@ -1131,14 +1135,48 @@ $('#listToggle').click(function(){
   $('#list').addClass('active');
 });
 
+// Map Toggles
 $('#tog').click(function(){
-  $('#tog2').removeClass('active');
-  $(this).addClass('active');
+  //$('#tog2').toggleClass('active');
+  $(this).toggleClass('active');
 });
 $('#tog2').click(function(){
-  $('#tog').removeClass('active');
-  $(this).addClass('active');
+  //$('#tog').removeClass('active');
+  $(this).toggleClass('active');
 });
 
 
+// Newsletter Form Toggle
+$('#signup-toggle').click(function(){
+  $('#mc_embed_signup').addClass('active');
+});
+$('#form-close').click(function(){
+  $('#mc_embed_signup').removeClass('active');
+});
 
+//$('#main').click(function(){
+//  $(this).removeClass('hide');
+//});
+
+
+// Sticky
+$(document).ready(function() {
+  var stickyNavTop = $('#featured').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop > stickyNavTop) {
+      //$('#featured').addClass('sticky');
+      //$('#toggle').addClass('sticky');
+  } else {
+      //$('#featured').removeClass('sticky');
+      //$('#toggle').removeClass('sticky');
+    }
+  };
+  stickyNav();
+
+  $(window).scroll(function() {
+    stickyNav();
+  });
+});

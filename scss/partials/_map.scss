@@ -2,10 +2,12 @@
 #main {
 	display:none;
 	position:relative;
+	//z-index:1;
 	//width:100%;
 	//padding:0;
 	//margin:auto;
 	&.active {display:block;}
+	//&.hide {z-index:-1;}
 	iframe { // Dev
 		width:100%;
 		pointer-events: none;
@@ -112,4 +114,15 @@
 			}
 		}
 	}
+}
+
+#ninjaWrap {
+		position:absolute;
+		//top:0;
+		//bottom:0;
+		width:100%;
+		background:black;
+		opacity:0;
+		z-index: 9998;
+		//display: none;
 }
