@@ -7,7 +7,7 @@
 
 <!-- Begin Intro -->
 	<div id="intro">
-		<h2>Citizen Satisfaction</h2>
+		<!--<h2>Citizen Satisfaction</h2>-->
 		<p class="byline">Discover thousands of 311 service requests logged across the city of Denver and rate the issues that matter most to you.</p>
 		<p>HappyGov is a citizen evangelist platform brought to life at Hack 4 Colorado. HappyGov has continued to develop into a fully-functional and customizable service request ecosystem.</p>
 		<a class="button" href="">Sign up for Notifications near you!</a>
@@ -34,10 +34,10 @@
 	<div>
 		<h3>Popular Requests</h3>
 		<ol>
-			<li>Case Summary? <span class="genericon genericon-digg">1200 Votes</span></li>
-			<li>Case Summary? <span class="genericon genericon-digg">800 Votes</span></li>
-			<li>Case Summary? <span class="genericon genericon-digg">400 Votes</span></li>
-			<li>Case Summary? <span class="genericon genericon-digg">200 Votes</span></li>
+			<li>Case Summary 1 <span class="genericon genericon-digg">1200 Votes</span></li>
+			<li>Case Summary 2 <span class="genericon genericon-digg">800 Votes</span></li>
+			<li>Case Summary 3 <span class="genericon genericon-digg">400 Votes</span></li>
+			<li>Case Summary 4 <span class="genericon genericon-digg">200 Votes</span></li>
 		</ol>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 		<div id="configArea">
-			
+
 			<div id="tog" class="btn">TOGGLE HEATMAP</div>
 			<div id="tog2" class="btn">TOGGLE CASES</div>
 			<!--<div id="typeBox" style="background:#fff;padding:5px;margin-top:20px;border:1px solid #333;">

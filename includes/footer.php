@@ -1,6 +1,6 @@
 <!-- Footer Content -->
 <footer>
- <p>License? // HappyGov 2014 // Hack4Colorado</p>
+ <p><a href=""><span class="genericon genericon-github"></span> View on Github</a> // License? // HappyGov 2014 // Hack4Colorado</p>
 </footer>
 
 <!-- Go To Top Btn -->
@@ -11,7 +11,7 @@
     <script src="js/production.min.js"></script>
 
     <!-- Retina -->
-    <script src="js/retina.min.js"></script>
+    <!--<script src="js/retina.min.js"></script>-->
 
     <!-- Modernizr -->
 <!--        <script src="js/modernizr.js"></script> -->

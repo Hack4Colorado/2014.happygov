@@ -8,7 +8,7 @@
 	box-shadow:inset 0 4px 6px 0 $dark-grey;
 	&:before {
 		content:'';
-		opacity:0.5;
+		opacity:0.8;
 		position:absolute;
 		top:0;
 		bottom:0;
@@ -26,7 +26,9 @@
 		//@include font-os(800);
 	}
 	.byline {
-		font-size:1.6em;
+		font-size:2.4em;
+		line-height: 1.2;
+		text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
 		@include font-os(400, italic);
 	}
 	.button {

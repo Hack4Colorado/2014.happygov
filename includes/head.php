@@ -23,52 +23,7 @@
 	<link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
 	<link href="/fonts/genericons/genericons.css" rel="stylesheet" type="text/css">
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
-	        <style>
-            #main {
-                position:relative;
-                width:100%;
-                padding:0;
-                margin:auto;
-            }
-            #heatmapArea {
-                position:relative;
-                float:left;
-                width:100%;
-                height:800px;
-                border:1px dashed black;
-            }
-            #configArea {
-                position:absolute;
-                right:10px;
-								width:20%;
-								max-width:180px;
-                padding:15px;
-                padding-top:0;
-                padding-right:0;
-            }
-            .btn {
-                margin-top:10px;
-                padding:10px 10px 10px;
-								cursor:pointer;
-                color:white;
-                background-color:#287297;
-								font-size:14px;
-								text-align:center;
-            }
-            #map {
-                width:100%;
-								height:800px;
-            }
-						#LocateButton {
-							position: absolute;
-							top: 95px;
-							left: 20px;
-							z-index: 50;
-						}
-						#typeBox{
-						display:none;
-						}
-        </style>
+
 <!--[if lt IE 9]>
 	<script src="js/html5.js"></script>
    <script>
