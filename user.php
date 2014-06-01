@@ -63,9 +63,12 @@
 		<li>Grafitti on Private Property <span>Closed: October, 2013 <span class="genericon genericon-downarrow"></span></span></li>
 		<li>Pothole Needs Repair <span>Closed: January 2, 2013 <span class="genericon genericon-downarrow"></span></span></li>
 		<li>Missed Trash <span>Closed: October 10, 2012 <span class="genericon genericon-downarrow"></span></span></li>
-		<li>Loose Dog Without Owner <span>Closed: October, 2013<span class="genericon genericon-downarrow"></span></span></li>
+		<li>Loose Dog Without Owner <span>Closed: October 10, 2013<span class="genericon genericon-downarrow"></span></span></li>
 		<li>Loose Dog Without Owner <span>Closed: January 2, 2013 <span class="genericon genericon-downarrow"></span></span></li>
 		<li>Missed Trash <span>Closed: October 10, 2012 <span class="genericon genericon-downarrow"></span></span></li>
+		<li>Missed Recycling <span>Closed: October 10, 2012<span class="genericon genericon-downarrow"></span></span></li>
+		<li>Grafitti on Private Property <span>Closed: August 2, 2012 <span class="genericon genericon-downarrow"></span></span></li>
+		<li>Grafitti on Private Property <span>Closed: July 31, 2012 <span class="genericon genericon-downarrow"></span></span></li>
 	</ul>
 </div>
 <!-- End Issues -->
