@@ -11,12 +11,13 @@ echo $mysqli->host_info . "\n";
 
 
 <?php
-$mysqli->real_query("SELECT id FROM happy_gov ORDER BY id DESC limit 15");
+$mysqli->real_query("SELECT count(*) as count FROM happy_gov");
 $res = $mysqli->use_result();
 
-echo "Result set order...\n";
+echo "\n";
+echo "Result count...\n";
 while ($row = $res->fetch_assoc()) {
-    echo " id = " . $row['id'] . "\n";
+    echo " count = " . $row['count'] . "\n";
 }
 ?>
 
