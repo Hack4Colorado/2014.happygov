@@ -911,10 +911,10 @@ function getFeatures() {
 function init() {
 		// initial extent of map
 		var initExtent = new esri.geometry.Extent({
-				xmax: -11622911.154424991,
-				xmin: -11745210.399681319,
-				ymax: 4874690.250052599,
-				ymin: 4782965.816110352,
+				xmax: -11658645.465148315,
+				xmin: -11713680.125513569,
+				ymax: 4843249.550527445,
+				ymin: 4813095.142868984,
 				"spatialReference": {
 						"wkid": 102100
 				}
@@ -1110,11 +1110,11 @@ function resizeDiv() {
 
   // Elements
   mapOffset = $('#main').offset().top;
-  footerH = $('footer').height;
+  footerH = $('footer').height();
 
   // Map
-  $('#main').css({'height': vph + 'px'});
-  $('#main #map').css({'height': vph + 'px'});
+  $('#main').css({'height': vph - footerH + 'px'});
+  $('#main #map').css({'height': vph - footerH + 'px'});
 }
 
 $('#mapToggle').click(function(){

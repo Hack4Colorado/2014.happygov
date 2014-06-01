@@ -8,11 +8,11 @@ function resizeDiv() {
 
   // Elements
   mapOffset = $('#main').offset().top;
-  footerH = $('footer').height;
+  footerH = $('footer').height();
 
   // Map
-  $('#main').css({'height': vph + 'px'});
-  $('#main #map').css({'height': vph + 'px'});
+  $('#main').css({'height': vph - footerH + 'px'});
+  $('#main #map').css({'height': vph - footerH + 'px'});
 }
 
 $('#mapToggle').click(function(){

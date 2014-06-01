@@ -19,14 +19,14 @@
 	<!-- Open Issues -->
 	<div>
 		<h3>Open Requests</h3>
-		<div class="big-number high">1097</div>
+		<div class="big-number high">7152</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
 	<!-- Overdue Issues -->
 	<div>
-		<h3>Overdue Requests</h3>
-		<div class="big-number medium">324</div>
+		<h3>Overdue Requests <span>(<10 days)</span></h3>
+		<div class="big-number medium">1951</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
@@ -34,10 +34,10 @@
 	<div>
 		<h3>Popular Requests</h3>
 		<ol>
-			<li>Case Summary 1 <span class="genericon genericon-digg">1038 Votes</span></li>
-			<li>Case Summary 2 <span class="genericon genericon-digg">874 Votes</span></li>
-			<li>Case Summary 3 <span class="genericon genericon-digg">561 Votes</span></li>
-			<li>Case Summary 4 <span class="genericon genericon-digg">390 Votes</span></li>
+			<li>Grafitti on Private Property <span class="genericon genericon-digg">1038 Votes</span></li>
+			<li>Pothole Needs Repair <span class="genericon genericon-digg">874 Votes</span></li>
+			<li>Missed Trash <span class="genericon genericon-digg">561 Votes</span></li>
+			<li>Loose Dog Without Owner <span class="genericon genericon-digg">390 Votes</span></li>
 		</ol>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>

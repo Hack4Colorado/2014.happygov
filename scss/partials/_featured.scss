@@ -18,7 +18,13 @@
 		}
 
 		// Widget Elements //
-		h3 {margin:1.2em 0 1em;}
+		h3 {
+			margin:1.2em 0 1em;
+			span {
+				font-size:0.75em;
+				color:$grey;
+			}
+		}
 		// Big Number
 		.big-number {
 			margin-bottom: 4em;

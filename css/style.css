@@ -333,6 +333,10 @@ header nav a {
 #featured > div h3 {
   margin: 1.2em 0 1em;
 }
+#featured > div h3 span {
+  font-size: 0.75em;
+  color: #cbcbcb;
+}
 #featured > div .big-number {
   margin-bottom: 4em;
   display: block;
