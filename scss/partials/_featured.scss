@@ -36,8 +36,25 @@
 		ol {
 			margin-left:$spacer * 4;
 			li {
+				font-size:1.25em;
 				margin-bottom: 1em;
-				span {float:right;}
+				span {
+					float:right;
+					width:auto;
+					position: relative;
+					top: -3px;
+					font-size:1.35em;
+					@include font-os(700);
+					&:after {
+						font-family:'Genericons';
+						content:'\f221';
+						margin-left:0.5em;
+					}
+					&:before {content:'';}
+				}
+				&:first-child span {color:$red;}
+				&:nth-child(2) span, &:nth-child(3) span {color:$orange;}
+				&:last-child span {color:$lightgreen;}
 			}
 		}
 		// Learn More links

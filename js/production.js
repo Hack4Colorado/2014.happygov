@@ -2,13 +2,17 @@ $(document).ready(function(){ resizeDiv(); });
 window.onresize = function(event) { resizeDiv(); };
 
 function resizeDiv() {
+  // Viewport
   vpw = $(window).width();
   vph = $(window).height();
-  mapOffset = $('#map').offset().top;
 
-  // Full Height Modules
-  $('#map').css({'height': vph - mapOffset + 'px'});
-  $('#map iframe').css({'height': vph - mapOffset + 'px'});
+  // Elements
+  mapOffset = $('#map').offset().top;
+  footerH = $('footer').height;
+
+  // Map
+  $('#map').css({'height': vph + 'px'});
+  $('#map iframe').css({'height': vph + 'px'});
 }
 
 $('#mapToggle').click(function(){
@@ -24,3 +28,7 @@ $('#listToggle').click(function(){
   $(this).addClass('active');
   $('#list').addClass('active');
 });
+
+
+
+

@@ -7,7 +7,9 @@
 
 <!-- Begin Intro -->
 	<div id="intro">
-		<p>INTRO: Some Language</p>
+		<h2>Healthy City, Healthy Life</h2>
+		<p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+		<p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
 	</div>
 <!-- End Intro -->
 
@@ -15,26 +17,26 @@
 <div id="featured">
 	<!-- Open Issues -->
 	<div>
-		<h3>Open Issues</h3>
+		<h3>Open Requests</h3>
 		<div class="big-number">0000</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
 	<!-- Overdue Issues -->
 	<div>
-		<h3>Overdue Issues</h3>
+		<h3>Overdue Requests</h3>
 		<div class="big-number">0000</div>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
 
 	<!-- Popular Issues -->
 	<div>
-		<h3>Popular Issues</h3>
+		<h3>Popular Requests</h3>
 		<ol>
-			<li>Case Summary? <span>1200 Votes</span></li>
-			<li>Case Summary? <span>800 Votes</span></li>
-			<li>Case Summary? <span>400 Votes</span></li>
-			<li>Case Summary? <span>200 Votes</span></li>
+			<li>Case Summary? <span class="genericon genericon-digg">1200 Votes</span></li>
+			<li>Case Summary? <span class="genericon genericon-digg">800 Votes</span></li>
+			<li>Case Summary? <span class="genericon genericon-digg">400 Votes</span></li>
+			<li>Case Summary? <span class="genericon genericon-digg">200 Votes</span></li>
 		</ol>
 		<a href="">Learn More <span class="genericon genericon-rightarrow"></span></a>
 	</div>
@@ -54,7 +56,7 @@
 
 <!-- Begin List -->
 	<div id="list">
-		<div class="chart"></div>
+		<div class="chart">LISTS!!!!! CHARTS!!!! EYEBALL CANDIES!!!!</div>
 	</div>
 	<!-- End List -->
 </div>
