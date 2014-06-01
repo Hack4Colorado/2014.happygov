@@ -1,6 +1,37 @@
 // Intro
 #intro {
-	background:$extra-light-grey;
-	padding:6% 10%;//$spacer;
-	font-size:1.4em;
+	//background:$extra-light-grey;
+	padding:6% 18%;//$spacer;
+	font-size:1.5em;
+	position:relative;
+	color:white;
+	box-shadow:inset 0 4px 6px 0 $dark-grey;
+	&:before {
+		content:'';
+		opacity:0.5;
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		background: url('/images/intro-bkgd.jpg') no-repeat center;
+		background-size:cover;
+		background-attachment:fixed;
+		z-index: -1;
+		//filter:blur(20px);
+	}
+	h2 {
+		color:$dark-blue;
+		//text-shadow: 2px 2px 0 rgba(255,255,255,0.75);
+		//@include font-os(800);
+	}
+	.byline {
+		font-size:1.6em;
+		@include font-os(400, italic);
+	}
+	.button {
+		background:$red;
+		margin-top:1em;
+		&:hover {background:darken($red, 10%);}
+	}
 }

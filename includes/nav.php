@@ -1,5 +1,5 @@
 <header>
-	<img src="/images/logo.png"/>
+	<img src="/images/logo.svg"/>
 	<nav>
 		<a href="">About</a>
 		<a href="http://twitter.com/happygov" target="_blank">@HappyGov</a>

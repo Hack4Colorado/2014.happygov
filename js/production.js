@@ -7,24 +7,24 @@ function resizeDiv() {
   vph = $(window).height();
 
   // Elements
-  mapOffset = $('#map').offset().top;
+  mapOffset = $('#main').offset().top;
   footerH = $('footer').height;
 
   // Map
-  $('#map').css({'height': vph + 'px'});
-  $('#map iframe').css({'height': vph + 'px'});
+  $('#main').css({'height': vph + 'px'});
+  $('#main iframe').css({'height': vph + 'px'});
 }
 
 $('#mapToggle').click(function(){
   $('#listToggle').removeClass('active');
   $('#list').removeClass('active');
   $(this).addClass('active');
-  $('#map').addClass('active');
+  $('#main').addClass('active');
 });
 
 $('#listToggle').click(function(){
   $('#mapToggle').removeClass('active');
-  $('#map').removeClass('active');
+  $('#main').removeClass('active');
   $(this).addClass('active');
   $('#list').addClass('active');
 });

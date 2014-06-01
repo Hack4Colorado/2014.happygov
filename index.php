@@ -7,9 +7,10 @@
 
 <!-- Begin Intro -->
 	<div id="intro">
-		<h2>Healthy City, Healthy Life</h2>
-		<p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
-		<p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+		<h2>Citizen Satisfaction</h2>
+		<p class="byline">Discover thousands of 311 service requests logged across the city of Denver and rate the issues that matter most to you.</p>
+		<p>HappyGov is a citizen evangelist platform brought to life at Hack 4 Colorado. HappyGov has continued to develop into a fully-functional and customizable service request ecosystem.</p>
+		<a class="button" href="">Sign up for Notifications near you!</a>
 	</div>
 <!-- End Intro -->
 
@@ -51,7 +52,7 @@
 <!-- End View Toggle -->
 
 <!-- Begin Map -->
-	<div id="map" class="active"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d196349.3432420176!2d-104.9327023923828!3d39.740583318570806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1401578563430" frameborder="0" style="border:0"></iframe></div>
+	<div id="main" class="active"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d196349.3432420176!2d-104.9327023923828!3d39.740583318570806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1401578563430" frameborder="0" style="border:0"></iframe></div>
 <!-- End Map -->
 
 <!-- Begin List -->

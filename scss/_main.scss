@@ -34,7 +34,7 @@ h5 {font-size:1em;}
 body {
 	font-size:62.5%;
 	color:$body-copy-color;
-	@include font-os(400);
+	@include font-os(300);
 }
 
 p {

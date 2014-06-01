@@ -117,7 +117,7 @@ body {
   font-size: 62.5%;
   color: #9d9d9d;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -198,6 +198,7 @@ header:after,
   padding: 0.9em 1.2em;
   display: inline-block;
   color: white;
+  text-decoration: none;
 }
 .button span {
   font-size: 13px;
@@ -230,40 +231,70 @@ header:after,
 }
 
 header {
-  padding: 1.2em 2em;
-  background: #cbcbcb;
+  padding: 1.5em 2em;
+  background: white;
 }
 header img, header nav {
   display: inline-block;
 }
 header img {
-  width: 230px;
+  width: 270px;
 }
 header nav {
   float: right;
   text-align: right;
   width: 50%;
   position: relative;
-  top: 1em;
+  top: 1.5em;
 }
 header nav a {
   margin-left: 3%;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #b2b2b2;
   font-size: 1.35em;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-}
-header nav a:not(.button) {
-  text-shadow: 2px 2px 0 #b2b2b2;
 }
 
 #intro {
-  background: #f6f6f6;
-  padding: 6% 10%;
-  font-size: 1.4em;
+  padding: 6% 18%;
+  font-size: 1.5em;
+  position: relative;
+  color: white;
+  -webkit-box-shadow: inset 0 4px 6px 0 #b2b2b2;
+  box-shadow: inset 0 4px 6px 0 #b2b2b2;
+}
+#intro:before {
+  content: '';
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("/images/intro-bkgd.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+#intro h2 {
+  color: #287297;
+}
+#intro .byline {
+  font-size: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+#intro .button {
+  background: #e74c3c;
+  margin-top: 1em;
+}
+#intro .button:hover {
+  background: #d62c1a;
 }
 
 /* Featured Module
@@ -363,13 +394,13 @@ header nav a:not(.button) {
   margin-left: 3px;
 }
 
-#map {
+#main {
   display: none;
 }
-#map.active {
+#main.active {
   display: block;
 }
-#map iframe {
+#main iframe {
   width: 100%;
   pointer-events: none;
 }
