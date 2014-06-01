@@ -3,9 +3,9 @@
 <head>
 	<title>HappyGov</title>
 	<meta charset="utf-8">
-	<meta name="description" content="" />
+	<meta name="description" content="" >
 	<meta name="author" content="">
-	<meta name="keywords" content="" />
+	<meta name="keywords" content="" >
 
 
 <!-- Optimized mobile viewport -->
@@ -21,8 +21,15 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
 	<link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+
+	<link href='css/c3.css' rel='stylesheet' type='text/css'>
+	<script src="js/libs/d3.min.js"></script>
+	<script src="js/libs/c3.min.js"></script>
+
 	<link href="/fonts/genericons/genericons.css" rel="stylesheet" type="text/css">
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
+
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 
 <!--[if lt IE 9]>
 	<script src="js/html5.js"></script>
@@ -45,4 +52,3 @@
 </head>
 
 <body>
-

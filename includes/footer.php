@@ -7,7 +7,7 @@
 <!-- <a href="#" class="go-top ss-icon scroll">▲</a>  -->
 
      <!-- JavaScript  -->
-    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+
     <script src="js/production.min.js"></script>
 
     <!-- Retina -->
