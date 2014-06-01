@@ -1042,8 +1042,7 @@ function init() {
 						},
 						"map": map,
 						"domNodeId": "heatLayer",
-						"opacity": 0.85,
-						"smartNavigation": false
+						"opacity": 0.85
 				});
 
 				//var blue = new PictureMarkerSymbol(picBaseUrl + "BluePin1LargeB.png", 32, 32).setOffset(0, 15);
