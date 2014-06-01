@@ -1,5 +1,12 @@
 // List
 #list {
 	display:none;
+	width:50%;
 	&.active {display:block;}
+	section {
+		margin-top:20px;
+	}
+	.c3 {
+		svg {}
+	}
 }

@@ -1,18 +1,10 @@
 <section class="line-chart">
-			<br>
-			<br>
 			<h3>Types of Cases Over Time</h3>
-			<br>
-			<br>
 			<div id="chart"></div>
 		</section>
 
 		<section class="pie-chart">
-			<br>
-			<br>
 			<h3>Open Cases by Neighborhood</h3>
-			<br>
-			<br>
 			<div id="chart-2"></div>
 		</section>
 

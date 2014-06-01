@@ -13,6 +13,8 @@ function resizeDiv() {
   //$('#ninjaWrap').css({'height': vph - footerH + 'px'});
   $('#main').css({'height': vph / 1.6 + 'px'});
   $('#main #map').css({'height': vph / 1.6 + 'px'});
+
+//  $('.c3 svg').css({'width': vpw / 2 + 'px'});
 }
 
 // Main Toggles (map, list)

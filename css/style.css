@@ -635,9 +635,13 @@ header nav a {
 
 #list {
   display: none;
+  width: 50%;
 }
 #list.active {
   display: block;
+}
+#list section {
+  margin-top: 20px;
 }
 
 #mc_embed_signup {
